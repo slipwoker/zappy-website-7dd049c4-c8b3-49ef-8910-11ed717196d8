@@ -1,0 +1,517 @@
+<!DOCTYPE html><html lang="he" dir="rtl"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>שירותי הכשרה מקצועית למאמני כלבי שירות — מרכז להנחיית מאמני כלבי שירות</title>
+  <meta name="description" content="גלו את מגוון שירותי איך להיות מאמן כלבי שירות מוסמך שלנו - מהכשרה בסיסית ועד התמחויות מתקדמות. צרו קשר עכשיו!">
+  <meta name="keywords" content="איך להיות מאמן כלבי שירות מוסמך, הכשרת מאמני כלבי שירות בישראל, כלבי שירות, ארגון מאמני כלבי עזר ישראל">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon-512x512.png">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<style>
+/* Zappy Attribution Header Styles */
+.zappy-header {
+  position: static;
+  width: 100%;
+  background: white;
+  box-shadow: 0px 4px 19px 0px rgba(0,0,0,0.04);
+  padding: 16px 10px;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  color: #4a4a4a;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 21px;
+}
+
+    .zappy-header p {
+      margin: 0;
+      padding: 0;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 21px;
+      white-space: nowrap;
+      display: inline-block;
+      vertical-align: baseline;
+      margin-bottom: 0 !important;
+    }
+
+.zappy-header .zappy-link {
+  font-weight: 700;
+  color: #4a4a4a;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.zappy-header .zappy-link:hover {
+  opacity: 0.7;
+}</style>
+    <!-- Cookie Consent -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.umd.js"></script>
+    <!-- Mickidum Accessibility Toolbar -->
+    <script src="https://cdn.jsdelivr.net/gh/mickidum/acc_toolbar/acctoolbar/acctoolbar.min.js"></script>
+<!-- Zappy Analytics -->
+<script>
+(function() {
+  'use strict';
+  
+  // Configuration
+  var config = {
+    websiteId: '7dd049c4-c8b3-49ef-8910-11ed717196d8',
+    apiUrl: 'https://api.zappy5.com/api/analytics/track',
+    sessionDuration: 30 * 60 * 1000, // 30 minutes
+    visitorDuration: 30 * 24 * 60 * 60 * 1000, // 30 days
+    trackPageViews: true,
+    trackClicks: true,
+    trackFormSubmissions: true
+  };
+  
+  // Generate or retrieve persistent visitor ID (30 days)
+  function getVisitorId() {
+    var visitorKey = 'zappy_visitor_' + config.websiteId;
+    var visitor = null;
+    
+    try {
+      visitor = localStorage.getItem(visitorKey);
+      if (visitor) {
+        var visitorData = JSON.parse(visitor);
+        var now = Date.now();
+        
+        // Check if visitor ID is still valid (30 days)
+        if (now - visitorData.created < config.visitorDuration) {
+          // Update last seen timestamp
+          visitorData.lastSeen = now;
+          localStorage.setItem(visitorKey, JSON.stringify(visitorData));
+          return visitorData.id;
+        }
+      }
+    } catch (e) {
+      console.warn('Zappy Analytics: LocalStorage not available');
+    }
+    
+    // Generate new visitor ID
+    var newVisitorId = 'zv_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+    
+    try {
+      localStorage.setItem(visitorKey, JSON.stringify({
+        id: newVisitorId,
+        created: Date.now(),
+        lastSeen: Date.now()
+      }));
+    } catch (e) {
+      // Continue without local storage
+    }
+    
+    return newVisitorId;
+  }
+  
+  // Generate or retrieve session ID (30 minutes)
+  function getSessionId() {
+    var sessionKey = 'zappy_session_' + config.websiteId;
+    var session = null;
+    
+    try {
+      session = sessionStorage.getItem(sessionKey);
+      if (session) {
+        var sessionData = JSON.parse(session);
+        var now = Date.now();
+        
+        // Check if session is still valid
+        if (now - sessionData.timestamp < config.sessionDuration) {
+          // Update timestamp
+          sessionData.timestamp = now;
+          sessionStorage.setItem(sessionKey, JSON.stringify(sessionData));
+          return sessionData.id;
+        }
+      }
+    } catch (e) {
+      console.warn('Zappy Analytics: SessionStorage not available');
+    }
+    
+    // Generate new session ID
+    var newSessionId = 'zs_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+    
+    try {
+      sessionStorage.setItem(sessionKey, JSON.stringify({
+        id: newSessionId,
+        timestamp: Date.now()
+      }));
+    } catch (e) {
+      // Continue without session storage
+    }
+    
+    return newSessionId;
+  }
+  
+  var visitorId = getVisitorId();
+  var sessionId = getSessionId();
+  
+  // Track an event
+  function trackEvent(eventType, data) {
+    data = data || {};
+    
+    var eventData = {
+      website_id: config.websiteId,
+      event_type: eventType,
+      page_path: window.location.pathname,
+      referrer: document.referrer || 'direct',
+      visitor_id: visitorId,
+      session_id: sessionId,
+      metadata: data
+    };
+    
+    // Use sendBeacon if available (better for page unload events)
+    if (navigator.sendBeacon) {
+      var blob = new Blob([JSON.stringify(eventData)], { type: 'application/json' });
+      navigator.sendBeacon(config.apiUrl, blob);
+    } else {
+      // Fallback to fetch
+      fetch(config.apiUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(eventData),
+        keepalive: true
+      }).catch(function(error) {
+        console.warn('Zappy Analytics: Failed to track event', error);
+      });
+    }
+  }
+  
+  // Track page view
+  if (config.trackPageViews) {
+    trackEvent('pageview', {
+      title: document.title,
+      url: window.location.href
+    });
+  }
+  
+  // Track clicks on important elements
+  if (config.trackClicks) {
+    document.addEventListener('click', function(e) {
+      var target = e.target;
+      
+      // Track button clicks (counted as actions)
+      if (target.tagName === 'BUTTON' || target.closest('button')) {
+        var button = target.tagName === 'BUTTON' ? target : target.closest('button');
+        trackEvent('click', {
+          element: 'button',
+          text: button.textContent.trim().substring(0, 100),
+          id: button.id || null,
+          class: button.className || null
+        });
+      }
+      
+      // Track link clicks (navigation - not counted as actions)
+      else if (target.tagName === 'A' || target.closest('a')) {
+        var link = target.tagName === 'A' ? target : target.closest('a');
+        trackEvent('navigation', {
+          element: 'link',
+          text: link.textContent.trim().substring(0, 100),
+          href: link.href,
+          external: link.hostname !== window.location.hostname
+        });
+      }
+    }, true);
+  }
+  
+  // Track form submissions
+  if (config.trackFormSubmissions) {
+    document.addEventListener('submit', function(e) {
+      var form = e.target;
+      
+      trackEvent('form_submit', {
+        form_id: form.id || null,
+        form_name: form.name || null,
+        form_action: form.action || null,
+        form_method: form.method || 'GET'
+      });
+    }, true);
+  }
+  
+  // Track time on page (send on page unload)
+  var pageLoadTime = Date.now();
+  
+  window.addEventListener('beforeunload', function() {
+    var timeOnPage = Math.floor((Date.now() - pageLoadTime) / 1000); // in seconds
+    
+    trackEvent('page_unload', {
+      time_on_page: timeOnPage,
+      page_path: window.location.pathname
+    });
+  });
+  
+  // Expose tracking function globally for custom events
+  window.zappyAnalytics = {
+    track: trackEvent,
+    getVisitorId: function() { return visitorId; },
+    getSessionId: function() { return sessionId; }
+  };
+  
+})();
+</script>
+<!-- End Zappy Analytics -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Zappy Attribution Header -->
+<div id="zappy-attribution-header" class="zappy-header" style="display: none;">
+  <p>Happily created by&nbsp;<a href="https://zappy5.com" target="_blank" rel="noopener noreferrer" class="zappy-link">Zappy</a></p>
+</div>
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <div class="nav-brand">
+        <a href="/" class="logo-link">
+          <img src="assets/logo.webp" alt="מרכז להנחיית מאמני כלבי שירות" class="logo" />
+        </a>
+      </div>
+      
+      <button class="mobile-toggle" id="mobileToggle" aria-label="פתח תפריט">
+        <svg class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+        </svg>
+        <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" style="display: none;">
+          <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+        </svg>
+      </button>
+      
+      <button class="phone-header-btn" aria-label="התקשר אלינו">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+        </svg>
+      </button>
+      
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="/services" class="active">שירותים</a></li>
+        <li><a href="/about">אודות</a></li>
+      </ul>
+      
+      <div class="nav-cta-container">
+        <li class="nav-cta-item">
+          <a href="/contact" class="nav-cta-btn">צור קשר</a>
+        </li>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>שירותי הכשרה מקצועית למאמני כלבי שירות</h1>
+      <h3>תוכניות מקיפות שיהפכו אתכם למאמני כלבי שירות מוסמכים ומקצועיים</h3>
+    </div>
+  </section>
+
+  <section class="services-detailed">
+    <div class="container">
+      <div class="service-block">
+        <div class="service-content">
+          <h2>תוכנית הסמכה מלאה למאמני כלבי שירות</h2>
+          <p>התוכנית המקיפה שלנו היא הדרך המובילה ללמוד איך להיות מאמן כלבי שירות מוסמך בישראל. התוכנית משלבת 300 שעות של הדרכה תיאורטית ומעשית, ומכסה את כל ההיבטים הנדרשים להפוך למאמן מקצועי בתחום כלבי השירות. אנחנו מתמקדים בהבנה מעמיקה של התנהגות כלבים, פסיכולוגיה קנינית, ומתודולוגיות אימון מתקדמות.</p>
+          <p>במהלך התוכנית תלמדו על סוגי כלבי השירות השונים - כלבי ניווט לעיווריםכלבי שמיעה לחירשים, כלבי ניידות לאנשים עם מוגבלויות פיזיות, וכלבי תמיכה רגשית. כל מודול בתוכנית מתמקד בהיבט אחר של הכשרת מאמני כלבי שירות בישראל, ומקנה לכם את הכלים המעשיים לעבוד עם כלבים ועם האנשים שהם משרתים.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> 300 שעות הדרכה תיאורטית ומעשית</li>
+            <li><i class="fas fa-check"></i> הסמכה מוכרת על ידי גופים מקצועיים מובילים</li>
+            <li><i class="fas fa-check"></i> ליווי אישי ממנטור מנוסה</li>
+            <li><i class="fas fa-check"></i> תרגול מעשי במתקני אימון מתקדמים</li>
+            <li><i class="fas fa-check"></i> חומרי לימוד מקיפים וספרות מקצועית</li>
+          </ul>
+        </div>
+        <div class="service-image">
+          <img data-placeholder="service-4" data-context="Professional certification ceremony with trainers receiving their service dog trainer certificates" src="assets/service-service-4.webp" alt="טקס הסמכה מקצועי למאמני כלבי שירות" class="service-img">
+        </div>
+      </div>
+
+      <div class="service-block reverse">
+        <div class="service-content">
+          <h2>התמחות באימון כלבי ניווט לעיוורים</h2>
+          <p>אחת ההתמחויות המבוקשות ביותר בתחום כלבי השירות היא אימון כלבי ניווט לעיוורים וכבדי ראייה. במסגרת ההתמחות הזו תלמדו את הטכניקות המיוחדות הנדרשות לאימון כלבים להוביל אנשים עיוורים בבטחה ובביטחון. זהו תחום מאתגר ומתגמל במיוחד, הדורש הבנה עמוקה של ניווט עירוני, זיהוי מכשולים, ותקשורת עם בעל הכלב.</p>
+          <p>ההתמחות כוללת הכשרה מעשית בסביבות עירוניות שונות, למידה על התנהגות כלבי ניווט, ועבודה עם אנשים עיוורים אמיתיים. תלמדו איך להתאים כלב ספציפי לצרכים של כל לקוח, איך לאמן את הכלב להתמודד עם מצבים מורכבים, ואיך להעביר את הכלב המאומן ללקוח בצורה חלקה ומקצועית. זהו חלק חשוב מהכשרת מאמני כלבי שירות בישראל.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> אימון מעשי בסביבות עירוניות מגוונות</li>
+            <li><i class="fas fa-check"></i> למידה על פסיכולוגיה של כלבי ניווט</li>
+            <li><i class="fas fa-check"></i> עבודה עם אנשים עיוורים וכבדי ראייה</li>
+            <li><i class="fas fa-check"></i> טכניקות התאמה אישית של כלבים ללקוחות</li>
+          </ul>
+        </div>
+        <div class="service-image">
+          <img data-placeholder="service-5" data-context="Guide dog trainer working with a Labrador retriever on urban navigation skills" src="assets/service-service-5.webp" alt="מאמן כלבי ניווט מאמן לברדור רטריבר במיומנויות ניווט עירוני" class="service-img">
+        </div>
+      </div>
+
+      <div class="service-block">
+        <div class="service-content">
+          <h2>התמחות בכלבי שמיעה לחירשים</h2>
+          <p>כלבי שמיעה הם כלבי שירות המאומנים להתריע על צלילים חשובים לאנשים חירשים או כבדי שמיעה. במסגרת ההתמחות הזו תלמדו איך לאמן כלבים לזהות ולהגיב לצלילים כמו פעמון דלת, אזעקת שעון, אזעקת עשן, בכי תינוק, וצלילים חשובים אחרים. זהו תחום ייחודי המשלב הבנה של התנהגות כלבים עם רגישות לצרכים של אנשים עם לקות שמיעה.</p>
+          <p>תלמדו את הטכניקות המיוחדות לאימון כלבים להתריע על צלילים, איך ליצור תגובות מותנות אמינות, ואיך לעבוד עם לקוחות חירשים. ההתמחות כוללת גם למידה על תקשורת בשפת הסימנים, הבנת התרבות החירשית, ועבודה עם טכנולוגיות מסייעות. זהו חלק חשוב מהכשרת מאמני כלבי שירות בישראל ומארגון מאמני כלבי עזר ישראל.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> אימון כלבים לזיהוי והתרעה על צלילים</li>
+            <li><i class="fas fa-check"></i> למידה על תקשורת בשפת סימנים</li>
+            <li><i class="fas fa-check"></i> עבודה עם אנשים חירשים וכבדי שמיעה</li>
+            <li><i class="fas fa-check"></i> שילוב טכנולוגיות מסייעות</li>
+          </ul>
+        </div>
+        <div class="service-image">
+          <img data-placeholder="service-6" data-context="Hearing dog alerting deaf person to doorbell sound in home environment" src="assets/service-service-6.webp" alt="כלב שמיעה מתריע לאדם חירש על צליל פעמון דלת" class="service-img">
+        </div>
+      </div>
+
+      <div class="service-block reverse">
+        <div class="service-content">
+          <h2>התמחות בכלבי ניידות ותמיכה פיזית</h2>
+          <p>כלבי ניידות הם כלבי שירות המסייעים לאנשים עם מוגבלויות פיזיות במשימות יומיומיות. במסגרת ההתמחות הזו תלמדו איך לאמן כלבים לסייע באיזון והליכה, להרים ולהביא חפצים, לפתוח דלתות, להפעיל מתגים, ולבצע משימות פיזיות אחרות. זהו תחום המצריך הבנה של גופניות כלבים, ביומכניקה, ובטיחות.</p>
+          <p>תלמדו איך להתאים את האימון לצרכים הספציפיים של כל לקוח, איך לבחור כלבים מתאימים לעבודת ניידות, ואיך לוודא שהכלב עובד בצורה בטוחה ויעילה. ההתמחות כוללת עבודה עם כיסאות גלגלים, הליכונים, ומכשירי עזר אחרים. זהו חלק חשוב מהכשרת מאמני כלבי שירות בישראל ומלמד אתכם איך להיות מאמן כלבי שירות מוסמך בתחום זה.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> אימון כלבים למשימות תמיכה פיזית</li>
+            <li><i class="fas fa-check"></i> עבודה עם כיסאות גלגלים ומכשירי עזר</li>
+            <li><i class="fas fa-check"></i> הבנת ביומכניקה ובטיחות</li>
+            <li><i class="fas fa-check"></i> התאמה אישית לצרכים ספציפיים</li>
+          </ul>
+        </div>
+        <div class="service-image">
+          <img data-placeholder="service-7" data-context="Mobility assistance dog helping person in wheelchair retrieve dropped item" src="assets/service-service-7.webp" alt="כלב ניידות מסייע לאדם בכיסא גלגלים לאסוף חפץ שנפל" class="service-img">
+        </div>
+      </div>
+
+      <div class="service-block">
+        <div class="service-content">
+          <h2>התמחות בכלבי תמיכה רגשית ופסיכיאטרית</h2>
+          <p>כלבי תמיכה רגשית ופסיכיאטרית הם כלבי שירות המסייעים לאנשים עם מוגבלויות נפשיות ורגשיות. במסגרת ההתמחות הזו תלמדו איך לאמן כלבים לזהות ולהגיב למצבי חרדה, דיכאון, התקפי פאניקה, והפרעות פוסט-טראומטיות. זהו תחום מאתגר המצריך הבנה עמוקה של פסיכולוגיה אנושית ויכולת לקרוא סימנים עדינים.</p>
+          <p>תלמדו טכניקות לאימון כלבים להרגיע, לעודד, ולהפחית תסמינים של מצוקה רגשית. ההתמחות כוללת למידה על הפרעות נפשיות שונות, עבודה עם אנשי מקצוע בתחום הבריאות הנפשית, והבנת הרגולציה המשפטית של כלבי תמיכה רגשית. זהו תחום צומח בתחום כלבי השירות ובארגון מאמני כלבי עזר ישראל.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> אימון כלבים לתמיכה רגשית ופסיכיאטרית</li>
+            <li><i class="fas fa-check"></i> למידה על הפרעות נפשיות שונות</li>
+            <li><i class="fas fa-check"></i> עבודה עם אנשי מקצוע בתחום הבריאות הנפשית</li>
+            <li><i class="fas fa-check"></i> הבנת רגולציה משפטית</li>
+          </ul>
+        </div>
+        <div class="service-image">
+          <img data-placeholder="service-8" data-context="Psychiatric service dog providing comfort to person experiencing anxiety" src="assets/service-service-8.webp" alt="כלב תמיכה פסיכיאטרית מספק נוחות לאדם החווה חרדה" class="service-img">
+        </div>
+      </div>
+
+      <div class="service-block reverse">
+        <div class="service-content">
+          <h2>סדנאות וקורסים קצרים</h2>
+          <p>בנוסף לתוכנית ההסמכה המלאה, אנחנו מציעים מגוון סדנאות וקורסים קצרים המתמקדים בנושאים ספציפיים בתחום כלבי השירות. הסדנאות שלנו מיועדות למאמנים מתחילים, מאמנים מנוסים המעוניינים להתעדכן, ולאנשי מקצוע אחרים העובדים עם כלבי שירות. כל סדנה מתמקדת בנושא ספציפי ומספקת כלים מעשיים מיידיים.</p>
+          <p>הסדנאות שלנו כוללות נושאים כמו: התנהגות כלבים מתקדמת, טכניקות אילוף חיוביות, עבודה עם כלבים עם בעיות התנהגות, רגולציה משפטית של כלבי שירות, אתיקה מקצועית, ועוד. הסדנאות מועברות על ידי מרצים מומחים ומשלבות הרצאות, הדגמות מעשיות, ותרגול. זהו דרך מצוינת להעמיק את הידע שלכם בהכשרת מאמני כלבי שירות בישראל.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> סדנאות בנושאים ספציפיים</li>
+            <li><i class="fas fa-check"></i> קורסים קצרים להתעדכנות מקצועית</li>
+            <li><i class="fas fa-check"></i> הרצאות ממרצים מומחים</li>
+            <li><i class="fas fa-check"></i> תרגול מעשי והדגמות</li>
+          </ul>
+        </div>
+        <div class="service-image">
+          <img data-placeholder="service-9" data-context="Workshop participants practicing service dog training techniques in small groups" src="assets/service-service-9.webp" alt="משתתפי סדנה מתרגלים טכניקות אימון כלבי שירות בקבוצות קטנות" class="service-img">
+        </div>
+      </div>
+
+      <div class="service-block">
+        <div class="service-content">
+          <h2>ליווי והדרכה מתמשכת לבוגרים</h2>
+          <p>אחרי שאתם מסיימים את ההכשרה ומקבלים את ההסמכה, אנחנו לא עוזבים אתכם. אנחנו מציעים ליווי והדרכה מתמשכת לבוגרים, כולל ייעוץ מקצועי, תמיכה בפתרון בעיות, והזדמנויות להתפתחות מקצועית נוספת. אנחנו רוצים שתצליחו בקריירה שלכם כמאמני כלבי שירות, ולכן אנחנו כאן בשבילכם לאורך כל הדרך.</p>
+          <p>הליווי שלנו כולל גישה לקהילת בוגרים פעילה, השתתפות בכנסים וימי עיון, קבלת חומרים מקצועיים מעודכנים, ואפשרות להשתתף בקורסי השתלמות. אנחנו גם מסייעים בחיבור לארגון מאמני כלבי עזר ישראל ולגופים מקצועיים אחרים. זהו חלק בלתי נפרד מהתחייבות שלנו להכשרת מאמני כלבי שירות בישראל ברמה הגבוהה ביותר.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> ייעוץ מקצועי מתמשך</li>
+            <li><i class="fas fa-check"></i> קהילת בוגרים פעילה</li>
+            <li><i class="fas fa-check"></i> השתתפות בכנסים וימי עיון</li>
+            <li><i class="fas fa-check"></i> קורסי השתלמות וחומרים מעודכנים</li>
+          </ul>
+        </div>
+        <div class="service-image">
+          <img data-placeholder="service-10" data-context="Alumni networking event with certified service dog trainers sharing experiences" src="assets/service-service-10.webp" alt="אירוע נטוורקינג לבוגרים עם מאמני כלבי שירות מוסמכים משתפים חוויות" class="service-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2>מעוניינים להתחיל את ההכשרה?</h2>
+      <p>צרו קשר עכשיו לקבלת מידע נוסף על תוכניות ההכשרה שלנו ומועדי התחלה קרובים.</p>
+      <a href="/contact" class="btn-cta">צור קשר עכשיו</a>
+    </div>
+  </section>
+
+  <a href="https://wa.me/[whatsapp_handle]" target="_blank" class="whatsapp-float" aria-label="WhatsApp" rel="noopener noreferrer">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  
+    <!-- Legal Footer -->
+    <footer class="legal-footer">
+      <div class="container">
+        <div class="footer-main">
+          <div class="all-rights-reserved">
+            <p>© 2025 מרכז להנחיית מאמני כלבי שירות. כל הזכויות שמורות.</p>
+          </div>
+          <div class="footer-social"><a href="https://facebook.com/[facebook_handle]" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+<a href="https://instagram.com/[instagram_handle]" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+<a href="https://wa.me/[whatsapp_handle]" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a></div>
+          <div class="footer-legal">
+            <a href="privacy.html" aria-label="מדיניות פרטיות">
+              מדיניות פרטיות
+            </a>
+            <span class="separator">|</span>
+            <a href="accessibility.html" aria-label="נגישות">
+              נגישות
+            </a>
+            <span class="separator">|</span>
+            <a href="terms.html" aria-label="תנאי שימוש">
+              תנאי שימוש
+            </a>
+          </div>
+        </div>
+        <div class="zappy-attribution">
+          <p>נוצר באמצעות <a href="https://zappy5.com" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">Zappy</a></p>
+        </div>
+      </div>
+    </footer>
+
+
+<!-- Zappy Attribution Header Script -->
+<script>
+(function() {
+  var websiteId = '7dd049c4-c8b3-49ef-8910-11ed717196d8';
+  
+  // Don't show header in preview mode
+  var currentUrl = window.location.href;
+  var isPreview = currentUrl.includes('/preview/') || 
+                  currentUrl.includes('/preview-fullscreen/') || 
+                  currentUrl.includes('localhost:5001') ||
+                  currentUrl.includes('localhost:3000');
+  
+  if (isPreview) {
+    return; // Exit early in preview mode
+  }
+  
+  fetch('https://api.zappy5.com/api/website/' + websiteId + '/tier')
+    .then(function(response) { return response.json(); })
+    .then(function(data) {
+      if (data.showAttribution) {
+        var header = document.getElementById('zappy-attribution-header');
+        if (header) {
+          header.style.display = 'block';
+        }
+      }
+    })
+    .catch(function(error) {
+      console.error('Failed to check tier:', error);
+    });
+})();
+</script>
+    <div data-integration="accessibility:toolbar"></div>
+    <script src="script.js"></script>
+</body></html>
