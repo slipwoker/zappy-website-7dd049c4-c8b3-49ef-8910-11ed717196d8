@@ -93,15 +93,18 @@ img {
 }
 
 :root {
-  --primary-color: #FF4136;
-  --secondary-color: #FFD700;
-  --accent-color: #FF851B;
-  --text-color: #1a1a1a;
+--primary-color: #1E3A8A;
+  --secondary-color: #F97316;
+  --accent-color: #8B5CF6;
+  --text-color: #4a4a4a;
   --bg-white: #ffffff;
   --bg-light: #f8f9fa;
   --shadow: 0 4px 12px rgba(0,0,0,0.1);
   --nav-color: #1a1a1a;
-  --nav-hover-color: #FF4136;
+  --nav-hover-color: #1E3A8A;
+  --background-color: #FFFFFF;
+  --surface-color: #F8FAFC;
+  --text-secondary-color: #8c8c8c;
 }
 
 .container {
@@ -259,7 +262,7 @@ small, .small-text {
 
 .nav-cta-btn {
   background: var(--primary-color);
-  color: #ffffff;
+  color: #FFFFFF;
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
   text-decoration: none;
@@ -270,8 +273,8 @@ small, .small-text {
 }
 
 .nav-cta-btn:hover {
-  background: #E6392D;
-  border-color: #E6392D;
+  background: #1E3A8A;
+  border-color: #1E3A8A;
   transform: translateY(-2px);
   box-shadow: 0 6px 16px rgba(255, 65, 54, 0.3);
 }
@@ -378,8 +381,8 @@ small, .small-text {
 }
 
 .btn-hero:hover {
-  background: #E6392D;
-  border-color: #E6392D;
+  background: #1E3A8A;
+  border-color: #1E3A8A;
   transform: translateY(-2px);
   box-shadow: 0 6px 16px rgba(255, 65, 54, 0.3);
 }
@@ -778,7 +781,7 @@ small, .small-text {
 .form-group textarea {
   width: 100%;
   padding: 0.75rem;
-  border: 2px solid #e0e0e0;
+  border: 2px solid #F8FAFC;
   border-radius: 8px;
   font-size: 16px;
   font-family: inherit;
@@ -821,7 +824,7 @@ small, .small-text {
 }
 
 .btn-submit:hover {
-  background: #E6392D;
+  background: #1E3A8A;
   transform: translateY(-2px);
   box-shadow: 0 6px 16px rgba(255, 65, 54, 0.3);
 }
@@ -886,7 +889,7 @@ small, .small-text {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: #25D366;
+  background: #F97316;
   color: #FFFFFF;
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
@@ -898,7 +901,7 @@ small, .small-text {
 }
 
 .btn-whatsapp:hover {
-  background: #1EBE57;
+  background: #F97316;
   transform: translateY(-2px);
   box-shadow: 0 6px 16px rgba(37, 211, 102, 0.3);
 }
@@ -1101,7 +1104,7 @@ small, .small-text {
     font-size: 24px;
     z-index: 1000;
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-    background: #25d366;
+    background: #F97316;
     color: white;
     text-decoration: none;
   }
@@ -1138,7 +1141,7 @@ img, picture, figure {
 
     /* Legal Footer Styles - Header Colors */
     .legal-footer {
-      background-color: #f2f2f2;
+      background-color: #F8FAFC;
       color: #1a1a1a;
       padding: 20px 0;
       font-size: 16px;
@@ -1355,7 +1358,7 @@ img, picture, figure {
 /* Cookie Consent Customizations */
 :root {
   --cc-btn-primary-bg: #3b82f6;
-  --cc-btn-primary-border: #3b82f6;
+  --cc-btn-primary-border: #8B5CF6;
   --cc-btn-primary-hover-bg: #2269dd;
 }
 
@@ -1522,9 +1525,9 @@ img, picture, figure {
 #mic-access-tool-general-button svg line,
 #mic-access-tool-general-button svg polyline,
 #mic-access-tool-general-button svg g {
-  fill: #f2f2f2 !important;
-  stroke: #f2f2f2 !important;
-  color: #f2f2f2 !important;
+  fill: #F8FAFC !important;
+  stroke: #F8FAFC !important;
+  color: #F8FAFC !important;
 }
 
 /* Target images if the icon is an img instead of SVG */
@@ -1545,7 +1548,7 @@ img, picture, figure {
 .mic-access-tool-box-header,
 div[id*="mic-access-tool-box"] header,
 div[id*="mic-access-tool-box"] .header {
-  background: #f2f2f2 !important;
+  background: #F8FAFC !important;
   color: white !important;
 }
 
@@ -1572,8 +1575,8 @@ div[id*="mic-access-tool-box"] .header * {
 #mic-access-tool-box button:hover,
 div[id*="mic-access-tool-box"] button.active,
 div[id*="mic-access-tool-box"] button:hover {
-  border-color: #f2f2f2 !important;
-  color: #f2f2f2 !important;
+  border-color: #F8FAFC !important;
+  color: #F8FAFC !important;
   background-color: rgba(242, 242, 242, 0.1) !important;
 }
 
@@ -1582,7 +1585,7 @@ div[id*="mic-access-tool-box"] button:hover {
 #mic-access-tool-box button[title*="Reset"],
 #mic-access-tool-box [class*="reset"],
 div[id*="mic-access-tool-box"] button[class*="reset"] {
-  background: #f2f2f2 !important;
+  background: #F8FAFC !important;
   color: white !important;
 }
 
